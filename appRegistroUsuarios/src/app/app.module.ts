@@ -15,7 +15,10 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "home", component: HomeComponent },
-  { path: "usuario", component: UsuarioComponent },
+  { path: "usuario", component: UsuarioListadoComponent, children:[
+    { path: "edicion", component: UsuarioEdicionComponent },
+    { path: "nuevo", component: UsuarioNuevoComponent }
+  ]},
   { path: "**", component: RutaNoEncontradaComponent }
 ]
 
