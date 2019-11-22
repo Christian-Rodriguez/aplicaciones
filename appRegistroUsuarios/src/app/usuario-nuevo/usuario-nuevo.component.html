@@ -1,1 +1,7 @@
 <p>usuario-nuevo works!</p>
+<form>
+	<div class="form-grup">
+    <input type="text" class="form-control" placeholder="Ingrese un nombre" name="nombre" [(ngModel)]="nombreUsuario">
+    <button type="button" class="btn btn-success" (click)="insertar()">Agregar</button>
+  </div>
+</form>
