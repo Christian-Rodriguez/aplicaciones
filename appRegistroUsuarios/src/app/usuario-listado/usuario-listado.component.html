@@ -7,7 +7,9 @@
   	<div class="col-sm-6" style="background-color:yellow;">
 		<table>
 			<tr *ngFor="let usuario of listaUsuarios">
-				<td>{{usuario}}</td>
+				<td>
+          <a class="nav-link" routerLink="/usuario/edicion/{{usuario[0]}}">{{usuario[1]}}</a>
+        </td>
 			</tr>
 		</table>
 	</div>

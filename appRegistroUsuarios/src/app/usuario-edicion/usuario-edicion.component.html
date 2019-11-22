@@ -1,1 +1,7 @@
 <p>usuario-edicion works!</p>
+<form>
+	<div class="form-grup">
+    <input type="text" class="form-control" placeholder="Ingrese un nombre" name="nombre" [(ngModel)]="nombreUsuario">
+    <button type="button" class="btn btn-success" (click)="insertar()">Actualizar</button>
+  </div>
+</form>

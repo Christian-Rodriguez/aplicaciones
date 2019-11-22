@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "home", component: HomeComponent },
   { path: "usuario", component: UsuarioListadoComponent, children:[
-    { path: "edicion", component: UsuarioEdicionComponent },
+    { path: "edicion/:id", component: UsuarioEdicionComponent },
     { path: "nuevo", component: UsuarioNuevoComponent }
   ]},
   { path: "**", component: RutaNoEncontradaComponent }

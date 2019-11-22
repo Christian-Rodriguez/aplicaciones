@@ -17,7 +17,15 @@ export class UsuarioService {
     return this.lista
   }
 
+  actualizarUsuario(){
 
+  }
 
+  cargarUsuario(id:Number){
+
+    for (let usuario of this.lista){
+      console.log(usuario);
+    }
+  }
 
 }
