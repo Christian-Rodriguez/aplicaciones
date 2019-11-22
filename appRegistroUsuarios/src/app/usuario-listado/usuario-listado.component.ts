@@ -7,7 +7,7 @@ import { UsuarioService } from '../usuario.service';
   styleUrls: ['./usuario-listado.component.css']
 })
 export class UsuarioListadoComponent implements OnInit {
-  listaUsuarios: Array<string> = []
+  listaUsuarios: Array<Array<string>> = []
   obj: UsuarioService
   constructor(usuarioService: UsuarioService) {
      this.obj = usuarioService
