@@ -1,8 +1,17 @@
 <p>usuario-listado works!</p>
-<button (click)="listar()">Listar</button>
 <br>
-<table>
-  <tr *ngFor="let usuario of listaUsuarios">
-    <td>{{usuario}}</td>
-  </tr>
-</table>
+<a class="nav-link" routerLink="/usuario/nuevo">
+  <button type="button" class="btn btn-success" style="font-size: 20px;font-weight: bold;">+</button>
+</a>
+<div class="row">
+  	<div class="col-sm-6" style="background-color:yellow;">
+		<table>
+			<tr *ngFor="let usuario of listaUsuarios">
+				<td>{{usuario}}</td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-sm-6" style="background-color:pink;">
+    <router-outlet></router-outlet>
+  </div>
+</div>

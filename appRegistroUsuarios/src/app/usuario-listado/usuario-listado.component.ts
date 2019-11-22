@@ -14,6 +14,7 @@ export class UsuarioListadoComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.listar();
   }
 
   listar() {
