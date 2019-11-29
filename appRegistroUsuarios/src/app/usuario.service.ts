@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UsuarioService {
-  private lista: Array<Array<string>> = [["1","José"], ["2","Tomás"], ["3","Pedro"]]
+  private lista: Array<Array<any>> = [[1,"José"], [2,"Tomás"], [3,"Pedro"]]
   id:number = 0
   constructor() { }
 
@@ -24,8 +24,9 @@ export class UsuarioService {
   cargarUsuario(id:Number){
 
     for (let usuario of this.lista){
-      console.log(usuario);
+      if (usuario[0] == id){
+         return usuario[1];
+      }
     }
   }
-
 }
